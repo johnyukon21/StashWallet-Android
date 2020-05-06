@@ -5,63 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.greenaddress.greenbits.ui.receive.ReceiveActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/assetWhitelistWarning"
-        android:background="@color/buttonJungleGreen"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="8dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="⚠️"
-            android:textColor="@color/red"
-            android:contentDescription="@string/id_warning"
-            android:layout_gravity="center_vertical"
-            android:paddingEnd="8dp">
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/btcButtonBg"
-            android:text="@string/id_ledger_supports_a_limited_set"
-            android:textSize="16sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/addressWarning"
-        android:background="@color/buttonJungleGreen"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="8dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="⚠️"
-            android:textColor="@color/red"
-            android:contentDescription="@string/id_warning"
-            android:layout_gravity="center_vertical"
-            android:paddingEnd="8dp">
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/btcButtonBg"
-            android:text="@string/id_please_verify_that_the_address"
-            android:textSize="16sp" />
-    </LinearLayout>
+    tools:context="co.stashsats.wallet.ui.receive.ReceiveActivity">
 
     <ScrollView
         android:id="@+id/content"
@@ -162,45 +106,6 @@
                         android:textSize="18sp" />
 
                 </RelativeLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/receivingIdLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/receivingIdTitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableEnd="@drawable/ic_help"
-                    android:drawablePadding="4dp"
-                    android:padding="@dimen/card_padding"
-                    android:text="@string/id_account_id" />
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/receivingIdValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="@dimen/card_padding"
-                        android:textColor="@color/textColor"
-                        android:textSize="16sp" />
-
-                    <ImageView
-                        android:id="@+id/copy"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginStart="4dp"
-                        android:src="@drawable/ic_copy"
-                        android:tint="@color/white" />
-                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

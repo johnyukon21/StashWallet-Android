@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.greenaddress.greenbits.ui.authentication.FirstScreenActivity">
+    tools:context="co.stashsats.wallet.ui.authentication.FirstScreenActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,15 +27,6 @@
         <View
             android:layout_width="fill_parent"
             android:layout_height="16dp"/>
-
-        <Button
-            android:id="@+id/settingsButton"
-            style="@style/settingsButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="@string/id_select_network"
-            />
 
         <View
             android:layout_width="fill_parent"

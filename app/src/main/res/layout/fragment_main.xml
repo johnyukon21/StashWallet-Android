@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.greenaddress.greenbits.ui.transactions.MainFragment"
+    tools:context="co.stashsats.wallet.ui.transactions.MainFragment"
     android:background="@color/windowBackground">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -26,36 +26,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginStart="@dimen/activity_horizontal_margin"
-                    android:layout_marginEnd="@dimen/activity_horizontal_margin">
-
-                    <ImageButton
-                        android:id="@+id/networkImage"
-                        android:layout_width="22dp"
-                        android:layout_height="22dp"
-                        android:layout_gravity="center"
-                        android:layout_marginEnd="3dp"
-                        android:background="?attr/themeIconNoPadding" />
-
-                    <TextView
-                        android:id="@+id/switchNetwork"
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:background="@android:color/transparent"
-                        android:paddingStart="4dp"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white"
-                        android:gravity="center"
-                        android:textSize="16sp" />
-
-
-                </LinearLayout>
-
-                <com.greenaddress.greenbits.ui.accounts.AccountView
+                <co.stashsats.wallet.ui.accounts.AccountView
                     android:id="@+id/accountView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -79,18 +50,9 @@
             android:layout_height="wrap_content">
 
             <TextView
-                android:id="@+id/assetsSelection"
-                style="@style/assetButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/id_select_asset"
-                android:visibility="gone" />
-
-            <TextView
                 android:id="@+id/emptyListText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/assetsSelection"
                 android:paddingTop="60dp"
                 android:gravity="center"
                 android:visibility="gone"
@@ -100,7 +62,6 @@
                 android:id="@+id/mainTransactionList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/assetsSelection"
                 android:scrollbars="vertical"
                 android:visibility="gone"/>
 

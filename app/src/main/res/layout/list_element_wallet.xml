@@ -49,16 +49,6 @@
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
-                <ImageButton
-                    android:id="@+id/selectSubaccount"
-                    android:layout_width="wrap_content"
-                    android:src="@drawable/ic_stack_wallets"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:padding="@dimen/button_margin"
-                    android:background="@color/hide"
-                    />
-
             </LinearLayout>
 
             <Space
