@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Green</string>
+    <string name="app_name" translatable="false">STASH</string>
     <string name="empty" translatable="false" />
-    <string name="btchip" translatable="false">BTChip</string>
     <string name="pref_default_host" translatable="false">127.0.0.1</string>
     <string name="pref_default_port" translatable="false">9050</string>
-    <string name="pgreen" translatable="false">GREEN</string>
 
     <string name="zero" translatable="false">0</string>
     <string name="zeroDecimal" translatable="false">0.00</string>
@@ -15,32 +13,17 @@
     <string name="doubleNewLine" translatable="false">\\n\\n</string>
     <string name="default123" translatable="false">123</string>
     <string name="notification_format_string" translatable="false">%s</string>
-    <string name="id_blockstream_green" translatable="false">Blockstream Green</string>
-
-    <string-array name="twoFactorMethods" translatable="false">
-        <item>email</item>
-        <item>sms</item>
-        <item>phone</item>
-        <item>gauth</item>
-    </string-array>
-    <string-array name="fee_target_values" translatable="false">
-        <item>3</item>
-        <item>12</item>
-        <item>24</item>
-    </string-array>
-
-    <string-array name="auto_logout_values" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>5</item>
-        <item>10</item>
-        <item>60</item>
-    </string-array>
 
     <plurals name="blocks" translatable="false">
         <item quantity="one">@string/id_block</item>
         <item quantity="other">@string/id_blocks</item>
     </plurals>
+
+    <string-array name="fee_target_values" translatable="false">
+        <item>3</item>
+        <item>12</item>
+        <item>24</item>
+    </string-array>
 
     <!-- FontAwesome Glyphs -->
     <string name="fa_arrow_down" translatable="false">&#xf063;</string>
@@ -50,12 +33,6 @@
     <string name="fa_qrcode" translatable="false">&#xf029;</string>
 
     <!-- Strings arrays -->
-    <string-array name="twoFactorChoices" translatable="false">
-        <item>@string/id_email</item>
-        <item>@string/id_sms</item>
-        <item>@string/id_call</item>
-        <item>@string/id_google_authenticator</item>
-    </string-array>
 
     <string-array name="timesStrings" translatable="false">
         <item>@string/id_year</item>
@@ -74,16 +51,5 @@
         <item>@string/id_minutes</item>
         <item>@string/id_seconds</item>
     </string-array>
-
-    <string-array name="fee_target_entries" translatable="false">
-        <item>@string/id_fast</item>
-        <item>@string/id_medium</item>
-        <item>@string/id_slow</item>
-    </string-array>
-
-    <plurals name="attempts_remaining" translatable="false">
-        <item quantity="zero">@string/id_no_attempts_remaining</item>
-        <item quantity="other">@string/id_attempts_remaining_d</item>
-    </plurals>
 
 </resources>

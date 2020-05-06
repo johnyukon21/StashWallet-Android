@@ -7,23 +7,6 @@
         android:key="unit"
         android:title="@string/id_bitcoin_denomination" />
 
-    <ListPreference
-        android:layout_height="match_parent"
-        android:iconSpaceReserved="false"
-        android:key="pricing"
-        android:title="@string/id_reference_exchange_rate" />
-
-
-    <ListPreference
-        android:entries="@array/fee_target_entries"
-        android:entryValues="@array/fee_target_values"
-        android:key="required_num_blocks"
-        android:title="@string/id_default_transaction_priority" />
-
-    <Preference
-        android:key="default_feerate_satbyte"
-        android:title="@string/id_default_custom_fee_rate" />
-
 
     <PreferenceCategory
         android:key="network_category"
@@ -31,19 +14,6 @@
         android:icon="@drawable/ic_network"
         android:layout="@layout/preference_category_green"
         />
-
-    <PreferenceCategory android:title="@string/id_security"
-        android:icon="@drawable/ic_security"
-        android:layout="@layout/preference_category_green"/>
-
-    <Preference
-        android:key="mnemonic_passphrase"
-        android:title="@string/id_mnemonic"
-        android:summary="@string/id_mnemonic_not_available" />
-
-    <ListPreference
-        android:key="altimeout"
-        android:title="@string/id_auto_logout_timeout" />
 
 
     <PreferenceCategory

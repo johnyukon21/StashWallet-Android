@@ -53,7 +53,7 @@ import de.schildbach.wallet.ui.scan.CameraManager;
 public class ScanForResultActivity extends AppCompatActivity implements TextureView.SurfaceTextureListener {
     private static final String TAG = ScanForResultActivity.class.getSimpleName();
 
-    public static final String INTENT_EXTRA_RESULT = "com.greenaddress.greenbits.QrText";
+    public static final String INTENT_EXTRA_RESULT = "co.stashsats.wallet.QrText";
     private static final long AUTO_FOCUS_INTERVAL_MS = 2500L;
 
     private final CameraManager cameraManager = new CameraManager();

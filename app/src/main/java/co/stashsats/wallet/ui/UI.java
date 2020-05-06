@@ -157,14 +157,7 @@ public abstract class UI {
         return popup(a, title, android.R.string.ok, android.R.string.cancel);
     }
 
-    public static Map<String, String> getTwoFactorLookup(final Resources res) {
-        final List<String> localized = Arrays.asList(res.getStringArray(R.array.twoFactorChoices));
-        final List<String> methods = Arrays.asList(res.getStringArray(R.array.twoFactorMethods));
-        final Map<String, String> map = new HashMap<>();
-        for (int i = 0; i < localized.size(); i++)
-            map.put(methods.get(i), localized.get(i));
-        return map;
-    }
+
 
 
     public static void toast(final Activity activity, final String msg, final Button reenable, final int len) {
@@ -407,7 +400,7 @@ public abstract class UI {
         if (!textOrIdentifier.startsWith("id_"))
             return textOrIdentifier; // Not a string id
         try {
-            int resId = res.getIdentifier(textOrIdentifier, "string", "com.greenaddress.greenbits_android_wallet");
+            int resId = res.getIdentifier(textOrIdentifier, "string", "co.stashsats.stash_android_wallet");
             return res.getString(resId);
         } catch (final Exception e) {
             return textOrIdentifier; // Unknown id
