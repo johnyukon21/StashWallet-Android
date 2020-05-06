@@ -19,11 +19,9 @@ app/src/main/jniLibs
 app/libwally-core
 app/gdk
 *.so
-GreenBits.iml
 app/app.iml
 bitcoinj/tools/checkpoints.txt
 bitcoinj/tools/checkpoints-testnet.txt
 bitcoinj/tools/checkpoints-testnet
 bitcoinj/tools/checkpoints
-app/src/main/java/com/blockstream/libgreenaddress/GDK.java
 app/src/main/java/com/blockstream/libwally/
